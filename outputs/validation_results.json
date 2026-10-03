@@ -1,0 +1,19 @@
+{
+  "input_file": "data/synthetic_household_data.csv",
+  "record_count": 21,
+  "missing_required_columns": [],
+  "duplicate_household_id_count": 2,
+  "missing_values_by_field": {
+    "household_id": 0,
+    "lga": 0,
+    "community": 1,
+    "household_size": 1,
+    "registration_status": 0,
+    "validation_status": 0
+  },
+  "invalid_household_size_rows": [5, 8],
+  "invalid_registration_rows": [],
+  "invalid_validation_rows": [],
+  "registration_formatting_issues": [10],
+  "validation_formatting_issues": []
+}
