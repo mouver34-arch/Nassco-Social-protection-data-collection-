@@ -154,3 +154,133 @@ Requirements:
 
 ```bash
 pip install -r requirements.txt
+---
+
+## 9. Example outputs
+
+Generated outputs are stored in `outputs/`:
+
+- `validation_results.json`
+- `cleaned_demo_dataset.csv`
+- `data_quality_report.md`
+
+The report is a **demonstration of a data-quality workflow**, not an official NASSCO/SOCU report.
+
+---
+
+## 10. Ethical and confidentiality approach
+
+This repository does not contain:
+
+- NIN;
+- BVN;
+- phone numbers;
+- beneficiary names;
+- household names;
+- exact addresses;
+- real household records;
+- real participant/beneficiary quotations;
+- confidential reports or forms;
+- internal organizational documents;
+- passwords, API keys, access tokens, or private URLs.
+
+Where a real-world workflow would involve sensitive identifiers, this portfolio substitutes synthetic fields and focuses on the **process of validation rather than the underlying personal data**.
+
+---
+
+## 11. Limitations
+
+This demonstration is intentionally smaller than a production social-protection database.
+
+It does not attempt to reproduce:
+
+- programme-specific eligibility rules;
+- production database schemas;
+- real NIN matching;
+- biometric verification;
+- geospatial household mapping;
+- live KoboToolbox/ODK synchronization;
+- programme payment processing; or
+- official NASSCO/SOCU decision rules.
+
+Those boundaries are deliberate: the portfolio demonstrates transferable data-collection and data-quality skills without exposing restricted information.
+
+---
+
+## 12. Future extensions
+
+If a second iteration is useful, the repository could add:
+
+- a larger synthetic dataset;
+- enumerator-level quality metrics;
+- controlled validation rules by field;
+- Excel-based QA templates;
+- automated tests; or
+- a small dashboard.
+
+These should be added only if they strengthen the portfolio's evidence of capability.
+
+---
+
+## 13. Skills demonstrated
+
+### Field Research & Data Collection
+
+- household enumeration;
+- beneficiary registration/verification workflow awareness;
+- community-level data collection;
+- discrepancy clarification;
+- digital data collection concepts.
+
+### Data Quality
+
+- duplicate detection;
+- missing-data checks;
+- field validation;
+- category standardization;
+- review/exception handling.
+
+### Data Analysis
+
+- Python;
+- pandas;
+- exploratory analysis and visualization;
+- descriptive quality summaries;
+- reproducible reporting.
+
+### Professional Practice
+
+- confidentiality-aware portfolio design;
+- separation of real experience from synthetic demonstration;
+- auditable data-processing steps;
+- evidence-oriented reporting.
+
+---
+
+## 14. Repository structure
+
+```text
+social-protection-data-collection/
+├── README.md
+├── PORTFOLIO_METADATA.md
+├── requirements.txt
+├── .gitignore
+├── LICENSE
+├── data/
+│   ├── README.md
+│   └── synthetic_household_data.csv
+├── docs/
+│   ├── methodology.md
+│   ├── schema.md
+│   ├── data_quality_framework.md
+│   └── ethical_data_handling.md
+├── scripts/
+│   ├── validate_data.py
+│   ├── clean_data.py
+│   └── generate_report.py
+├── outputs/
+│   ├── validation_results.json
+│   ├── cleaned_demo_dataset.csv
+│   └── data_quality_report.md
+└── notebooks/
+    └── exploratory_analysis.ipynb
